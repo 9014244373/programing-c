@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main ()
+{
+	float a,b,c;
+	int d,e,f;
+	printf("enter the number to find :");
+	scanf("%d",&a);
+	printf("square number :%f\n",a*a);
+	printf("cube number : %f\n",a*a*a);
+	return 'o';
+}
