@@ -1,0 +1,13 @@
+The program has an error in the declaration of the variable name "public". "public" is a reserved keyword in C++ and cannot be used as an identifier or variable name.
+
+Here is the corrected code:
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+int my_public_variable = 10;
+cout << my_public_variable;
+return 0;
+}
