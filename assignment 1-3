@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char a;
+    int n;
+
+    cout << "Enter a character and an integer: ";
+    cin >> a >> n;
+
+    cout << "Character: " << a << endl;
+    cout << "Number: " << n;
+
+    return 0;
+}
+
