@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n1 = 60;
+    double n2 = 276.683;
+    char ch = 'C';
+
+    cout << n1 << endl;    
+    cout << n2 << endl;   
+    cout << "character: " << ch << endl;   
+    return 0;
+}
+
+
