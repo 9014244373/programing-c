@@ -1,0 +1,24 @@
+1. There is a missing header file. The program should include the header file "iostream" for the input/output operations and "conio.h" for the getch() function.
+2. The keyword "using" should be lowercase.
+3. There is a semicolon after the main() function declaration, which is not needed.
+4. The loop counter variable "i" is not declared in the program. It should be declared as an integer before the loop.
+5. The comma in the loop condition should be a semicolon.
+6. The output statement should print the value of "i" instead of "number", which is uninitialized.
+
+Here is the corrected one :
+
+
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+int i, number;
+for(i=1; i<=6; i++)
+{
+cout<<"Value of variable i is: "<<i<<endl;
+getch();
+}
+return 0;
+}
