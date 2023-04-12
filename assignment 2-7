@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int days_until_birthday;
+   cout << "Enter the number of days until your birthday: ";
+   cin >> days_until_birthday;
+
+   int years = 0;
+   int weeks = 0;
+   int days = days_until_birthday;
+
+   while (days >= 365) {
+      years++;
+      days -= 365;
+   }
+
+   while (days >= 7) {
+      weeks++;
+      days -= 7;
+   }
+
+   cout << "You are " << years << " years old." << endl;
+   cout << "You have " << weeks << " weeks and " << days << " days until your next birthday." << endl;
+
+   return 0;
+}
