@@ -1,0 +1,10 @@
+The program will compile and execute successfully in C but will fail to compile in C++.
+
+In C, the program will declare an integer variable named new and assign it a value of 5. 
+It will then print the value of new using the %d format specifier with the printf function.
+Since new is not a keyword in C, it is a valid identifier and can be used as a variable name.
+
+In C++, the program will fail to compile because new is a keyword in C++ and cannot be used as an identifier for variable names. 
+The use of new as a variable name will result in a syntax error.
+
+To make the program work in C++, the variable name new should be changed to a different identifier that is not a keyword in C++, such as new_int or newVar.
