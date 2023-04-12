@@ -1,0 +1,12 @@
+In C, the program will compile successfully but it will produce a warning stating that "initialization discards 'const' qualifier from pointer target type." 
+This is because j is declared as a constant integer using the const keyword and cannot be modified, but ptr is a pointer to an integer and can modify the 
+value it points to. However, the program still runs, and the output will be 20, which is the value of j.
+
+In C++, the program will not compile because it is trying to assign a constant integer to a non-constant integer pointer, which is not allowed in C++. 
+So, the line int *ptr = &j; will produce an error stating that "cannot initialize a variable of type 'int *' with an rvalue of type 'const int *'". 
+This error occurs because C++ is more strict than C when it comes to handling constant variables.
+
+If the program is modified in C++ by declaring j as a non-constant integer, then it will compile and produce the output of 20, similar to the C program.
+
+
+
