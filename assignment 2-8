@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+   double amount, roi, compounded_interest;
+   int time_period;
+
+  
+   cout << "Enter the amount to be invested: ";
+   cin >> amount;
+
+   cout << "Enter the rate of interest (in %): ";
+   cin >> roi;
+
+   cout << "Enter the time period (in years): ";
+   cin >> time_period;
+
+ 
+   double rate = roi / 100.0;
+   double denominator = pow((1 + rate), time_period);
+   compounded_interest = amount * denominator;
+
+ 
+   cout << "Compounded interest after " << time_period << " years is: " << compounded_interest - amount << endl;
+
+   return 0;
+}
