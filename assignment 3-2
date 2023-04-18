@@ -1,0 +1,9 @@
+x is equal to y
+In this program, the variables x and y are initialized with the same value of 10.
+
+The ^ operator in the if condition is the bitwise XOR operator, 
+which returns a value of 0 if the corresponding bits in x and y are the same.
+
+Since x and y have the same value, the XOR operation will result in 0. 
+The ! operator then negates the result to give true, so the if condition is true and the program executes
+the statement inside the if block, which prints "x is equal to y".
