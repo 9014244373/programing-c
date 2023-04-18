@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string username, reusername;
+
+    cout << "Enter the user name: ";
+    getline(cin, username);
+
+    cout << "Reenter the user name: ";
+    getline(cin, reusername);
+
+    bool isValid = true;
+
+    for (char c : username) {
+        if (!isalnum(c)) {
+            isValid = false;
+            break;
+        }
+    }
+
+    if (isValid && username != reusername) {
+        isValid = false;
+    }
+
+    if (isValid) {
+        cout << "User name is valid" << endl;
+    } else {
+        cout << "User name is invalid" << endl;
+    }
+
+    return 0;
+}
