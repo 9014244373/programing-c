@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+void printSquareStarPattern(int n) {
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+}
+
+void printRectangleDollarPattern(int rows, int cols) {
+    for (int i = 1; i <= rows; i++) {
+        for (int j = 1; j <= cols; j++) {
+            cout << "$ ";
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+    int n = 5;
+    cout << "Square star pattern:\n";
+    printSquareStarPattern(n);
+
+    int rows = 4;
+    int cols = 6;
+    cout << "Rectangle dollar pattern:\n";
+    printRectangleDollarPattern(rows, cols);
+
+    return 0;
+}
