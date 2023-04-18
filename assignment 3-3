@@ -1,0 +1,13 @@
+OUTPUT:
+
+1 2 3 4 5 6 7 8 9 10
+
+
+This program uses recursion to print the numbers from 1 to 10.
+
+The static keyword before the variable x makes it a static variable, which means it retains its value between function calls.
+
+The if statement prints the current value of x, increments it, checks if it is less than N (which is 10), and then calls main() again if the condition is true.
+
+Since the condition is true for the first call to main(), it prints 1, increments x to 2, and calls main() again. 
+This process continues until x reaches 10 and the condition x < N is false, which stops the recursion and the program returns 0.
